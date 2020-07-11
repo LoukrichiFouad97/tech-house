@@ -4,7 +4,7 @@ import "./collection-overview.scss";
 
 const CollectionOverview = ({ title, text, imageSrc }) => {
 	return (
-		<div className={`collection-overview my-3 ${imageSrc}`}>
+		<div className={`collection-overview my-1 ${imageSrc}`}>
 			<h4>{title} </h4>
 			<p>{text}</p>
 			<button className="btn btn-secondary">Shop Now</button>

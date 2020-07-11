@@ -6,7 +6,7 @@ import "./collections.scss";
 
 const Collections = () => {
 	return (
-		<div className="Collections m-3">
+		<div className="Collections my-3">
 			<div className="container">
 				<div className="row">
 					<div className="left-collection col-md-6">

@@ -1,0 +1,22 @@
+.footer {
+	margin-top: 50px;
+	background-color: #f4f4f4;
+	height: 40px;
+	.container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		p {
+			padding: 0;
+			margin: 0;
+    }
+    
+    i {
+      cursor: pointer;
+      &:hover {
+        color:#1e2d7d;
+      }
+    }
+	}
+}
