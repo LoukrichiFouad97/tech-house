@@ -1,0 +1,24 @@
+.collection-overview {
+	border: 1px solid black;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	color: white;
+	font-weight: bold;
+}
+
+.image-src-1 {
+	background: url("../../assets/amd-ryzen.jpg") no-repeat center center/cover;
+}
+
+.image-src-2 {
+	background: url("../../assets/amd.png") no-repeat center center/cover;
+}
+
+.image-src-3 {
+	background: url("../../assets/radeon.png") no-repeat center center/cover;
+}
