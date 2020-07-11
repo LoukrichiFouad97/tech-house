@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -8,9 +10,9 @@ const Navbar = () => {
 			<div className="container">
 				<div className="row">
 					<nav className="navbar navbar-expand-md navbar-dark px-0 col">
-						<a className="navbar-brand font-weight-bold" href="#">
+						<Link className="navbar-brand font-weight-bold" to="/">
 							TECH<span className="text-secondary ">HOUSE</span>
-						</a>
+						</Link>
 
 						<button
 							className="navbar-toggler"
@@ -27,24 +29,27 @@ const Navbar = () => {
 						<div className="collapse navbar-collapse" id="navbarNav">
 							<ul className="navbar-nav">
 								<li className="nav-item">
-									<a className="nav-link text-white" href="#">
-										Home <span className="sr-only">(current)</span>
-									</a>
+									<Link to="/" className="nav-link text-white">
+										Home
+									</Link>
 								</li>
+
 								<li className="nav-item">
-									<a className="nav-link text-white" href="#">
+									<Link to="/shop" className="nav-link text-white">
 										Shop
-									</a>
+									</Link>
 								</li>
+
 								<li className="nav-item">
-									<a className="nav-link text-white" href="#">
+									<Link to="/contact" className="nav-link text-white">
 										Contact
-									</a>
+									</Link>
 								</li>
+
 								<li className="nav-item">
-									<a className="nav-link text-white" href="#">
-										Our Story
-									</a>
+									<Link to="/about" className="nav-link text-white">
+										About
+									</Link>
 								</li>
 							</ul>
 						</div>
