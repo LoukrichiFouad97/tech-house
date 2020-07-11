@@ -1,0 +1,37 @@
+.slider-item {
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	.item-img {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.image-src-1 {
+		background: url("../../assets/amd-ryzen.jpg") no-repeat center center/cover;
+	}
+	.image-src-2 {
+		background: url("../../assets/amd.png") no-repeat center center/cover;
+	}
+	.image-src-3 {
+		background: url("../../assets/radeon.png") no-repeat center center/cover;
+	}
+
+	.item-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

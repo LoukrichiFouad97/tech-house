@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./index.css";
 import "./custom.scss"; // Customized bootstrap
-
+import "bootstrap";
 import App from "./App";
 
 import * as serviceWorker from "./serviceWorker";
