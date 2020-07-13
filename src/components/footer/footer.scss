@@ -1,7 +1,8 @@
 .footer {
 	margin-top: 50px;
-	background-color: #f4f4f4;
-	height: 40px;
+	background-color: #e4e4e4;
+	height: 50px;
+	width: 100%;
 	.container {
 		height: 100%;
 		display: flex;
@@ -10,13 +11,13 @@
 		p {
 			padding: 0;
 			margin: 0;
-    }
-    
-    i {
-      cursor: pointer;
-      &:hover {
-        color:#1e2d7d;
-      }
-    }
+		}
+
+		i {
+			cursor: pointer;
+			&:hover {
+				color: #1e2d7d;
+			}
+		}
 	}
 }
