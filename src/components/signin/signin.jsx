@@ -21,19 +21,19 @@ class Signin extends Component {
 		console.log(this.state);
 	};
 
-	handleSubmit = async (e) => {
+	handleSubmit = (e) => {
 		e.preventDefault();
 		const { email, password } = this.state;
-		await auth
+		auth
 			.signInWithEmailAndPassword(email, password)
-			.then((data) => console.log(data))
+			// .then((data) => console.log(data))
 			.catch((err) => {
 				this.setState({ error: err });
 			});
 	};
 
 	render() {
-		const { error } = this.state;
+		const { error, email, password } = this.state;
 		return (
 			<div className="Signin">
 				<h2 className="title text-capitalize">Sign-in with your account</h2>
@@ -51,7 +51,9 @@ class Signin extends Component {
 						<label htmlFor="email">Email address</label>
 						<input
 							type="email"
+							s
 							name="email"
+							value={email}
 							className="form-control"
 							id="email"
 							aria-describedby="emailHelp"
@@ -65,6 +67,7 @@ class Signin extends Component {
 						<input
 							type="password"
 							name="password"
+							value={password}
 							className="form-control"
 							id="password"
 							placeholder="Password"
