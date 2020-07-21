@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import { auth, signInWithGoogle } from "../../database/firebase";
-import ShowAlert from "../alert/alert";
 
 import "./signin.scss";
 
@@ -11,7 +10,6 @@ class Signin extends Component {
 		this.state = {
 			email: "",
 			password: "",
-			error: "",
 		};
 	}
 
@@ -28,23 +26,15 @@ class Signin extends Component {
 			.signInWithEmailAndPassword(email, password)
 			// .then((data) => console.log(data))
 			.catch((err) => {
-				this.setState({ error: err });
+				console.log(err);
 			});
 	};
 
 	render() {
-		const { error, email, password } = this.state;
+		const { email, password } = this.state;
 		return (
 			<div className="Signin">
 				<h2 className="title text-capitalize">Sign-in with your account</h2>
-
-				{error
-					? ShowAlert(
-							"This account is not registered. Please sign-up",
-							100,
-							"danger"
-					  )
-					: null}
 
 				<form>
 					<div className="form-group">
