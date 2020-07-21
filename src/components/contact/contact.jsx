@@ -5,16 +5,19 @@ export default class ContactInfo extends Component {
 		return (
 			<div className="ContactInfo container row m-auto ">
 				<div className="col d-flex flex-column justify-content-center w-75">
-					<h2>Contact Info</h2>
+					<h2 className='mb-3'>Contact Info</h2>
 					<ul className="list-group">
 						<li class="list-group-item">
-							Address <span>123 Street, state, Country</span>{" "}
+							<span className="font-weight-bold d-block">Address:</span>{" "}
+							<span>123 Street, state, Country</span>{" "}
 						</li>
 						<li class="list-group-item">
-							Phone: <span>(123) 555 5555</span>
+							<span className="font-weight-bold d-block">Phone:</span>{" "}
+							<span>(123) 555 5555</span>
 						</li>
 						<li class="list-group-item">
-							Email: <span>example@email.com</span>{" "}
+							<span className="font-weight-bold d-block">Email:</span>{" "}
+							<span>example@email.com</span>{" "}
 						</li>
 					</ul>
 				</div>
@@ -44,8 +47,8 @@ export default class ContactInfo extends Component {
 								placeholder="Message..."
 							/>
 						</div>
-						<button type="submit" className="btn btn-primary mr-2">
-							Sign-in
+						<button type="submit" className="btn btn-primary mr-2 px-4">
+							Send
 						</button>
 					</form>
 				</div>
